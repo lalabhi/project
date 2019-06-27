@@ -1,0 +1,21 @@
+uuid: aeef9c2e-f738-4bf8-a7e8-2d875c9c514b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_data
+    - paragraphs.paragraphs_type.contact
+  module:
+    - options
+id: paragraph.contact.field_data
+field_name: field_data
+entity_type: paragraph
+bundle: contact
+label: data
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

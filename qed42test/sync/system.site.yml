@@ -1,0 +1,14 @@
+uuid: 8ab46012-2ebf-48da-b4ca-b618e7e4c2f5
+name: drupal-dev2
+mail: site@mail.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI

@@ -1,0 +1,23 @@
+uuid: 444ff172-48e9-48ef-95db-397cae77e5f0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_youtubeurl
+    - node.type.page
+  module:
+    - link
+id: node.page.field_youtubeurl
+field_name: field_youtubeurl
+entity_type: node
+bundle: page
+label: youtubeurl
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

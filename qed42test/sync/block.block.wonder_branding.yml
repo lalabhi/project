@@ -1,0 +1,25 @@
+uuid: 1a855e6a-3fa3-4780-9aef-a7948c866e0a
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - wonder
+_core:
+  default_config_hash: NDwadleLD3YVSbDUaakxyYZyINYtkFtOVGShfq4kWy8
+id: wonder_branding
+theme: wonder
+region: header
+weight: -4
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

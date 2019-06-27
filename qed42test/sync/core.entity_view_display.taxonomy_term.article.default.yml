@@ -1,0 +1,21 @@
+uuid: 6211c1c3-dd34-4e34-940f-9556e5f254b8
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.article
+  module:
+    - text
+id: taxonomy_term.article.default
+targetEntityType: taxonomy_term
+bundle: article
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

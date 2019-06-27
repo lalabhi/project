@@ -1,0 +1,22 @@
+uuid: 9d92806a-d4c7-4288-a4e2-825006905ae7
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - wonder
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: wonder_help
+theme: wonder
+region: content
+weight: -30
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,9 @@
+uuid: 96e817a6-cb9e-4a15-8de1-22ddb9a6a033
+langcode: en
+status: true
+dependencies: {  }
+name: Article
+vid: article
+description: ''
+hierarchy: 0
+weight: 0

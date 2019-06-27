@@ -1,0 +1,22 @@
+uuid: b3f24f8f-49e9-448c-b728-49fc0fa994d2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.contact.field_data
+    - paragraphs.paragraphs_type.contact
+  module:
+    - options
+id: paragraph.contact.default
+targetEntityType: paragraph
+bundle: contact
+mode: default
+content:
+  field_data:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+hidden: {  }

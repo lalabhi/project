@@ -1,0 +1,47 @@
+uuid: dd393e96-8af0-40e8-b6fb-e98fd3e1b1dc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.weather.body
+    - field.field.node.weather.field_city
+    - field.field.node.weather.field_cityimage
+    - node.type.weather
+  module:
+    - image
+    - text
+    - user
+id: node.weather.default
+targetEntityType: node
+bundle: weather
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_city:
+    weight: 102
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_cityimage:
+    weight: 103
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }
