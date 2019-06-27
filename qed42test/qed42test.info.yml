@@ -1,0 +1,5 @@
+name: QED42 Test
+type: module
+description: For the review.
+core: 8.x
+

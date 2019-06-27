@@ -1,0 +1,13 @@
+<?php
+
+/**
+ * hook_theme()
+ */
+function qed42test_theme() {
+  return array(
+    'node--page--full' => array(
+      'template' => 'node--page--full',
+    ),
+  );
+}
+

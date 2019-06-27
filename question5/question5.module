@@ -1,0 +1,24 @@
+<?php
+
+function question5_modules_install($modules){
+  $arr2 = $this->config('addperson.settings')->get('person');
+
+  $mailManager = \Drupal::service('plugin.manager.mail');
+  $module = $modules;
+  $key = 'create_article';
+  $to = \Drupal::currentUser()->getEmail();
+  $params['message'] = $modules.'is installed';
+  $params['node_title'] = 'test';
+  $langcode = \Drupal::currentUser()->getPreferredLangcode();
+  $send = true;
+  foreach ($arr2 as $email){
+    $result = $mailManager->mail($module, $key, $email, $langcode, $params, NULL, $send);
+    //kint($result);
+  }
+  if ($result['result'] !== true) {
+    \Drupal::messenger()->addMessage(t('There was a problem sending your message and it was not sent.'), 'error');
+  }
+  else {
+    \Drupal::messenger()->addMessage(t('Your message has been sent.'));
+  }
+}

@@ -1,0 +1,23 @@
+<?php
+
+/**
+ * @file
+ * Add a field to an existing form.
+ */
+use \Drupal\Core\Form\FormStateInterface;
+
+/**
+ * Implements hook_form_alter().
+ */
+function qed42test_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  //kint($form_id);
+  //kint($form_state);
+  if($form_id == 'system_site_information_settings'){
+
+    $form['extended_siteinfo_extra_setting'] = array(
+      '#type' => 'textfield',
+      '#title' => t('API key'),
+    );
+    $form['actions']['submit']['#value'] = t('Submit');
+  }
+}

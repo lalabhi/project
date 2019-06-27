@@ -1,0 +1,49 @@
+{#
+/**
+ * @file
+ * Theme implementation to weather a block.
+ *
+ * Available variables:
+ * - url: url of the image given by the user inside the configuration file
+ * - title: Title of the block
+ * - description: description of the block
+ * - data: An array consisting of the value given out by the API
+ *    - temperature: temperature of the city
+ *    - pressure: pressure of the city
+ *    - humidity: humidity of the city
+ *    - min temp: minimum temperature of the city
+ *    - max temp: maximum temperature of the city
+ *
+ */
+#}
+
+{{ attach_library('weatherapp/customcss') }}
+
+
+
+
+<div class="main-wrap">
+  <div class="image2" style="background-image:url('{{ file_url(url) }}')">
+    <div class="font">
+      <div class="img-with-text">
+        <img src="{{ base_path ~ directory }}/image/sun.png" height="200" width="200">
+        <h1>{{ title }}</h1>
+
+
+      </div>
+      <div class="temperature">
+        <h3>{{ description }}</h3>
+        <h1>{{ data['temp'] }}</h1>
+      </div>
+
+    </div>
+  </div>
+  <div class="remaining">
+    <div class="spacing"><p>Pressure</p>
+      <h2>{{ data['pressure'] }}</h2></div>
+
+    <div class="spacing"><p>Humidity</p><h2>{{ data['humidity'] }}</h2></div>
+    <div class="spacing"><p>Min Temp</p><h2>{{ data['temp_min'] }}</h2></div>
+    <div><p>Max Temp</p><h2>{{ data['temp_max'] }}</h2></div>
+  </div>
+</div>

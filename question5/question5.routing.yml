@@ -1,0 +1,7 @@
+test.admin_settings:
+  path: '/test/myform'
+  defaults:
+    _form: '\Drupal\question5\Form\owneradd'
+    _title: 'config ur form'
+  requirements:
+    _permission: 'access content'

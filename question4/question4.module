@@ -1,0 +1,20 @@
+<?php
+
+/**
+ * @file
+ */
+
+/**
+ * Hook_theme()
+ */
+function question4_theme() {
+  return [
+    'weather_app_block' => [
+      'variables' => ['title' => NULL, 'description' => NULL, 'data' => NULL, 'url' => NULL],
+      'template' => 'block-custom',
+    ],
+  ];
+}
+function question4_page_attachments(array &$attachments) {
+  $attachments['#attached']['library'][] = 'question4/customcss';
+}
